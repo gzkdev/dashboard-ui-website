@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <section className="app-container">
-      <Sidebar toggleState={menu} ></Sidebar>
+      <Sidebar toggleState={menu} toggleMenu={toggleMenu} ></Sidebar>
       <MainPageSection></MainPageSection>
     </section>
   );
