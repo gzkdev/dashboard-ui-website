@@ -5,7 +5,7 @@ import MainPageTrendingSection from "./MainPageTrendingSection"
 function MainPageSection({ toggleMenu, toggleState }) {
     return (
         <main className="app-main-section">
-            <MainPageHeader></MainPageHeader>
+            <MainPageHeader toggleMenu={toggleMenu} toggleState={toggleState}></MainPageHeader>
             <MainPageRecommendedSection></MainPageRecommendedSection>
             <MainPageTrendingSection></MainPageTrendingSection>
         </main>

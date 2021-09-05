@@ -4,17 +4,10 @@ import MainPageSection from './components/MainPageSection';
 
 function App() {
   const [menu, setMenu] = useState('app-sidebar');
-
-  function toggleMenu() {
-    if (menu === "app-sidebar") {
-      setMenu(() => "app-sidebar active");
-    }
-    setMenu(() => "app-sidebar");
-  }
   return (
     <section className="app-container">
-      <Sidebar toggleState={menu} toggleMenu={toggleMenu} ></Sidebar>
-      <MainPageSection></MainPageSection>
+      <Sidebar toggleState={menu} toggleMenu={setMenu} ></Sidebar>
+      <MainPageSection toggleState={menu} toggleMenu={setMenu} ></MainPageSection>
     </section>
   );
 }
