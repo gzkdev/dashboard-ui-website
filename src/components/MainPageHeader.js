@@ -1,4 +1,5 @@
-import { FaChevronDown, FaBell, FaBars, FaSearch } from 'react-icons/fa'
+import { FaChevronDown, FaBell, FaBars, FaSearch } from 'react-icons/fa';
+import Image from '../assets/images/dp-1.jpg';
 
 function MainPageHeader({ toggleMenu }) {
 
@@ -17,8 +18,10 @@ function MainPageHeader({ toggleMenu }) {
             </form>
             <div className="app-header-profile-box">
                 <button>
-                    <div className="app-header-profile-img"></div>
-                    <span className="app-header-profile-name">Dhey</span>&nbsp;
+                    <div className="app-header-profile-img">
+                        <img src={Image} alt="" className="app-img" />
+                    </div>
+                    <span className="app-header-profile-name">Chukwudi</span>&nbsp;
                     <FaChevronDown></FaChevronDown>
                 </button>
                 <button><FaBell></FaBell></button>
