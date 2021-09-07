@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap");
+
 *,
 *::before,
 *::after {
@@ -25,9 +27,7 @@ html {
 body {
   width: 100%;
   font-size: 1rem;
-  font-family: Poppins, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: Urbanist, Poppins, Inter, sans-serif;
   line-height: 1.5;
   color: var(--color500);
   background: var(--color100);
